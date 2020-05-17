@@ -6,25 +6,25 @@ namespace AgenciaVehiculos
     {
         public static void Main(string[] args)
         {
-            int contraseña;
+            string contraseña;
             string admin;
             Console.WriteLine("Ingrese nombre: ");
             admin = Console.ReadLine();
             Console.WriteLine("Ingrese contraseña: ");
-            contraseña = int.Parse(Console.ReadLine()); 
+            contraseña = Console.ReadLine();
 
-            while (contraseña != 1234 || admin != "admin")
+            while (contraseña !="abc1234" || admin != "admin")
             {
                 Console.WriteLine("Fallo al iniciar sesion");
                 Console.WriteLine("Ingrese usuario: ");
                 admin = Console.ReadLine();
                 Console.WriteLine("Ingrese contraseña: ");
-                contraseña = int.Parse(Console.ReadLine());
+                contraseña = Console.ReadLine();
             }
             int opcion = 0;
 
             
-            Automovil vehiculo = new Automovil("Susuki",2019,1500,123, TipoMotor.CUATRO_TIEMPOS, 200,
+            Automovil vehiculo = new Automovil("jeeb",2019,1500,123, TipoMotor.CUATRO_TIEMPOS, 200,
                             3, TipoRecubrimiento.POLIUTERANO, 150, 200, TipoMezclador.INYECTOR, 8);
 
             do
