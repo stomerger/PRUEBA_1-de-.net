@@ -24,7 +24,7 @@ namespace AgenciaVehiculos
             int opcion = 0;
 
             
-            Automovil vehiculo = new Automovil("jeeb",2019,1500,123, TipoMotor.CUATRO_TIEMPOS, 200,
+            Automovil vehiculo = new Automovil("Nissan",2019,1500,123, TipoMotor.CUATRO_TIEMPOS, 200,
                             3, TipoRecubrimiento.POLIUTERANO, 150, 200, TipoMezclador.INYECTOR, 8);
 
             do
